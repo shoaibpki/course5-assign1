@@ -71,16 +71,42 @@
       <nav class="navbar navbar-expand-md bg-dark navbar-dark mt-2">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="#" class="nav-link" target="blank.html">Home</a>
+            <a
+              href="home.html"
+              class="nav-link"
+              target="blank"
+              data-toggle="tooltip"
+              title="company overview"
+              >Home</a
+            >
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link" target="blank.html">Bestsellers</a>
+            <a
+              href="bestseller.html"
+              class="nav-link"
+              data-toggle="tooltip"
+              title="company's Bestsellers"
+              target="blank"
+              >Bestsellers</a
+            >
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link" target="blank.html">Contact Us</a>
+            <a
+              href="contact.html"
+              class="nav-link"
+              data-toggle="tooltip"
+              title="contact with company"
+              target="blank"
+              >Contact Us</a
+            >
           </li>
         </ul>
       </nav>
     </header>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>
